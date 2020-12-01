@@ -8,16 +8,16 @@
   
   <title>Frontend Mentor | Easybank landing page</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./queries.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="/images/logo.svg" alt="easybank">
+    <img class="logo" src="/images/logo.svg" alt="easybank">
 
     <ul class="menu-options">
       <li>Home</li>
@@ -27,7 +27,10 @@
       <li>Careers</li>
     </ul>
 
-    <button class="request-button" type="button">Request Invite</button>
+    <button id="header-request" class="request-button" type="button">Request Invite</button>
+    <div class="hamburger-menu">
+      <img src="/images/icon-hamburger.svg" alt="">
+    </div>
   </header>
 
   <main>
@@ -39,7 +42,7 @@
         <button class="request-button" type="button">Request Invite</button>
       </div>
       <div class="cellphone">
-        <img  src="/images/image-mockups.png" alt="cellphone">
+        <img src="/images/image-mockups.png" alt="cellphone">
       </div>
     </section>
 
@@ -152,5 +155,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Jadson Santos</a>.
   </div>
+  <script src="/index.js"></script>
 </body>
 </html>

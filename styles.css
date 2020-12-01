@@ -19,14 +19,20 @@
 }
 
 header {
-    /*position: relative;*/
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     background-color: var(--White);
     height: 90px;
-    /*z-index: 2;*/
+    z-index: 2;
+}
+
+.hamburger-menu {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .request-button {
@@ -51,6 +57,10 @@ header {
 .menu-options {
     display: flex;
     flex-direction: row;
+}
+
+.menu-options.hamburger {
+    opacity: 100%;
 }
 
 .menu-options li {
